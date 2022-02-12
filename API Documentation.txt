@@ -1,0 +1,30 @@
+	This is an Invoice Backend API
+
+To work with this:
+1. To get all invoices data, go to postman and select option of GET
+	to get the data on response. Write localhost/3000/
+2. To send an email to particular ID, first you need to sign in 
+	to mailtrap dashboard and get your user and pass from there,
+	which you can update in code (line no. 15,16)
+	or else
+	if you want gmail service which is commented in code(line 13),
+	can uncomment and add your email-id and gmail password to login
+	also from your gmail accounr allow less secure apps to turn ON, 
+	so that mail service did not get blocked(just for demo).
+ -To send email to particular id Write localhost/3000/email/id_number
+**id_number can be 1,2,3
+3. For getting data of particular id Write localhost/3000/id_number.
+4. For posting new Invoice dropdown POST request in postman and 
+	Write localhost/3000/newInvoice and add the data in body select JSON 
+	format before sending request. Add you new data in body of request.
+NOTE: Write dueDate in yyyy-mm-dd format.
+
+5. For deleting an Invoice by ID use localhost/3000/delete/id-number.
+	Dropdown DELETE request on Postman.
+6. For updating Status Late to any particular id. Write localhost/3000/updateLate/id_number
+	Use PUT request in dropdown from Postman and data in JSON.
+	Run this request with empty request body. Console message will 
+	appear about the status of Payment. According write in the request body
+	update Status of your Invoice and again send the request, this will update 
+	the Invoice status of particular ID.
+
